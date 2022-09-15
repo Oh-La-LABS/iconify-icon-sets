@@ -1,3 +1,17 @@
+# Slightly modified fork for use on CORE
+This repo contains a slightly modified fork with a few icon sets removed due to licensing
+concerns. Currently any set with any of these licenses are removed:
+* CC BY-NC 4.0
+* GPL
+* GPL 2.0
+* GPL 3.0
+
+## Remove filtered sets
+Run the following command to apply the current filter:
+```
+npm run remove-restricted
+```
+
 # Iconify icon sets in JSON format
 
 This is collection of SVG icons created by various authors, released under various free licenses. Some collections require attribution when used for commercial purposes. See [collections.md](./collections.md) for list of collections and their licenses.

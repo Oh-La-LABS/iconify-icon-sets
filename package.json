@@ -30,6 +30,7 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "rimraf dist && tsup src/index.ts --format cjs,esm --dts",
+		"remove-restricted": "tsup tools/removeRestrictedIcons.ts && node dist/removeRestrictedIcons.js",
 		"test-esm": "jest --clearCache && cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --config=jest.esm.config.ts",
 		"test-cjs": "npm run build && jest --clearCache && jest --config=jest.cjs.config.ts",
 		"test-locate-esm": "jest --clearCache && cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --config=jest.esm.config.ts src/locate.esm.test.ts -i",
@@ -49,6 +50,7 @@
 		"cross-env": "^7.0.3",
 		"eslint": "^8.18.0",
 		"esno": "^0.16.3",
+		"fs": "^0.0.1-security",
 		"jest": "^28.1.1",
 		"jest-each": "^28.1.1",
 		"ts-jest": "^28.0.5",
