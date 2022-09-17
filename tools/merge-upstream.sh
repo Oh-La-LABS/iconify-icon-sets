@@ -40,7 +40,7 @@ if [ "$latest_merged_commit" != "$latest_upstream_commit" ]; then
       mv collections-original.md collections.md
     fi
     git add collections.json.oll collections.md.oll
-    git commit -a -c "Commit of rename before merge"
+    git commit -a -m "Commit of rename before merge"
     git pull upstream master
     echo "$latest_upstream_commit" > upstream_commit.txt
   else
