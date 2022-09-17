@@ -1,7 +1,9 @@
-# List of icon collections used on CORE
+# List of icon collections
+
+
 
 ### Material Symbols
-* Number of icons: 8201
+* Number of icons: 8240
 * Author: Google
 * URL: https://github.com/google/material-design-icons
 * License: Apache 2.0
@@ -53,7 +55,6 @@
 * Author: IBM
 * URL: https://github.com/carbon-design-system/carbon/tree/main/packages/icons
 * License: Apache 2.0
-* License URL: undefined
 * Version: 11.7.0
 * Palette: Colorless
 
@@ -207,7 +208,7 @@
 
 
 ### Lucide
-* Number of icons: 831
+* Number of icons: 833
 * Author: Lucide Contributors
 * URL: https://github.com/lucide-icons/lucide
 * License: ISC
@@ -324,7 +325,7 @@
 
 
 ### Prime Icons
-* Number of icons: 259
+* Number of icons: 260
 * Author: PrimeTek
 * URL: https://github.com/primefaces/primeicons
 * License: MIT
@@ -392,6 +393,16 @@
 * Palette: Colorless
 
 
+### Gridicons
+* Number of icons: 201
+* Author: Automattic
+* URL: https://github.com/Automattic/gridicons
+* License: GPL 2.0
+* License URL: https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md
+* Version: 3.4.0
+* Palette: Colorless
+
+
 ### Mono Icons
 * Number of icons: 180
 * Author: Mono
@@ -408,6 +419,15 @@
 * URL: https://www.figma.com/community/file/1034432054377533052/Quill-Iconset
 * License: MIT
 * License URL: https://github.com/yourtempo/tempo-quill-icons/blob/main/LICENSE
+* Palette: Colorless
+
+
+### Gala Icons
+* Number of icons: 51
+* Author: Jake Wells
+* URL: https://github.com/sisyphusion/gala-icons
+* License: GPL
+* License URL: https://github.com/sisyphusion/gala-icons/blob/main/LICENSE
 * Palette: Colorless
 
 
@@ -609,7 +629,7 @@
 
 
 ### Noto Emoji
-* Number of icons: 3418
+* Number of icons: 3447
 * Author: Google Inc
 * URL: https://github.com/googlefonts/noto-emoji
 * License: Apache 2.0
@@ -927,12 +947,21 @@
 * Palette: Colorless
 
 
+### Dashicons
+* Number of icons: 342
+* Author: WordPress
+* URL: https://github.com/WordPress/dashicons
+* License: GPL
+* License URL: https://github.com/WordPress/dashicons/blob/master/gpl.txt
+* Version: 0.9.0
+* Palette: Colorless
+
+
 ### Flat Color Icons
 * Number of icons: 329
 * Author: Icons8
 * URL: https://github.com/icons8/flat-Color-icons
 * License: MIT
-* License URL: undefined
 * Version: 1.0.2
 * Palette: Colorful
 
@@ -951,7 +980,6 @@
 * Author: Zurb
 * URL: https://github.com/zurb/foundation-icon-fonts
 * License: MIT
-* License URL: undefined
 * Version: 3.0.0
 * Palette: Colorless
 
@@ -961,7 +989,6 @@
 * Author: Dmitry Baranovskiy
 * URL: https://github.com/dmitrybaranovskiy/raphael
 * License: MIT
-* License URL: undefined
 * Palette: Colorless
 
 
@@ -970,7 +997,6 @@
 * Author: Icons8
 * URL: https://github.com/icons8/windows-10-icons
 * License: MIT
-* License URL: undefined
 * Version: 1.0.0
 * Palette: Colorless
 
@@ -1055,6 +1081,24 @@
 * Palette: Colorless
 
 
+### IcoMoon Free
+* Number of icons: 491
+* Author: Keyamoon
+* URL: https://github.com/Keyamoon/IcoMoon-Free
+* License: GPL
+* License URL: https://www.gnu.org/licenses/gpl.html
+* Palette: Colorless
+
+
+### PrestaShop Icons
+* Number of icons: 479
+* Author: PrestaShop
+* URL: https://github.com/PrestaShop/prestashop-icon-font
+* License: CC BY-NC 4.0
+* License URL: https://creativecommons.org/licenses/by-nc/4.0/
+* Palette: Colorless
+
+
 ### Subway Icon Set
 * Number of icons: 306
 * Author: Mariusz Ostrowski
@@ -1079,7 +1123,6 @@
 * Author: Icons8
 * URL: https://github.com/icons8/WPF-UI-Framework
 * License: MIT
-* License URL: undefined
 * Palette: Colorless
 
 
@@ -1093,6 +1136,16 @@
 * Palette: Colorless
 
 
+### Elegant
+* Number of icons: 100
+* Author: Kenny Sing
+* URL: https://github.com/pprince/etlinefont-bower
+* License: GPL 3.0
+* License URL: https://www.gnu.org/licenses/gpl.html
+* Version: 1.0.1
+* Palette: Colorless
+
+
 ### Elusive Icons
 * Number of icons: 304
 * Author: Team Redux
@@ -1101,8 +1154,3 @@
 * License URL: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 * Version: 2.0.0
 * Palette: Colorless
-
-
-## Summary
-* Number of sets: 113
-* Number of icons: 137708
