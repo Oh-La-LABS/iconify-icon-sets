@@ -46,6 +46,8 @@ if [ "$latest_merged_commit" != "$latest_upstream_commit" ]; then
   else
     echo "Skipped merging upstream commits due to unclean local repo!"
   fi
+else
+  echo "No upstream commits missing, skipping merge..."
 fi
 
 echo "Moving collection files back (if any are left behind)"
@@ -74,4 +76,13 @@ if [ "$DIRECT_RESTORE" == false ]; then
 else
   echo "Completed restoring renamed files!"
 fi
+if [ -f collections-original.json ]; then
+  npm run remove-restricted
+else
+  echo "Couldn't SAFELY run 'npm run remove-restricted' since collections-original.json doesn't exist!"
+fi
 git status
+echo
+echo "If all looks ok above, run the following:"
+echo "git add collections*"
+echo "git commit -a"
