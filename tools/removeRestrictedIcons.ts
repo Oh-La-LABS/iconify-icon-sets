@@ -22,6 +22,8 @@ export type IconifyMetaDataCollection = {
 
   let numAllowedIcons = 0;
   let numAllowedSets = 0;
+  let numAllowedHiddenIcons = 0;
+  let numAllowedHiddenSets = 0;
   let numNotAllowedIcons = 0;
   let numNotAllowedSets = 0;
   let ollCollection = {} as IconifyMetaDataCollection;
@@ -43,9 +45,9 @@ export type IconifyMetaDataCollection = {
       case 'Unlicense':
         let s = collections[iconSet];
         ollCollection[iconSet] = s;
+        numAllowedSets += 1;
+        numAllowedIcons += collections[iconSet].total as any;
         if (s.hidden !== true) {
-          numAllowedSets += 1;
-          numAllowedIcons += collections[iconSet].total as any;
           ollCollectionMd += `### ${s.name}\n`;
           ollCollectionMd += `* Number of icons: ${s.total}\n`
           ollCollectionMd += `* Author: ${s.author.name}\n`
@@ -56,6 +58,8 @@ export type IconifyMetaDataCollection = {
           ollCollectionMd += s.palette ? `* Palette: Colorful\n` : '* Palette: Colorless\n'
           ollCollectionMd += '\n\n';
         } else {
+          numAllowedHiddenSets += 1;
+          numAllowedHiddenIcons += collections[iconSet].total as any;
           console.log('Hidden:', title, '-', iconSet, collections[iconSet].license.url);
         }
         break;
@@ -78,11 +82,13 @@ export type IconifyMetaDataCollection = {
     }
   };
   ollCollectionMd += '## Summary\n';
-  ollCollectionMd += `* Number of sets: ${numAllowedSets}\n`;
-  ollCollectionMd += `* Number of icons: ${numAllowedIcons}\n`;
+  ollCollectionMd += `* Number of sets: ${numAllowedSets} (hidden: ${numAllowedHiddenSets})\n`;
+  ollCollectionMd += `* Number of icons: ${numAllowedIcons} (hidden: ${numAllowedHiddenIcons})\n`;
   console.log('Total Icons allowed:', numAllowedIcons);
+  console.log('Total Icons allowed (hidden):', numAllowedHiddenIcons);
   console.log('Total Icons NOT allowed:', numNotAllowedIcons);
   console.log('Total Sets allowed:', numAllowedSets);
+  console.log('Total Sets allowed (hidden):', numAllowedHiddenSets);
   console.log('Total Sets NOT allowed:', numNotAllowedSets);
   await fs.writeFile('collections.json', JSON.stringify(ollCollection, null, 2))
   await fs.writeFile('collections.md', ollCollectionMd)

@@ -1104,5 +1104,5 @@
 
 
 ## Summary
-* Number of sets: 113
-* Number of icons: 137779
+* Number of sets: 128 (hidden: 15)
+* Number of icons: 144207 (hidden: 6428)
